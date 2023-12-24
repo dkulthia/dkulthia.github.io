@@ -50,8 +50,8 @@ Tools: Git, VS Code
   <img src="https://github-readme-streak-stats.herokuapp.com/?user=Darshkul24&" alt="GitHub Streak" />
 </p>
 
-
+<!--
 ## Contact Information
 - 📧 Email: your.email@example.com
 - 🌐 Portfolio: [Your Portfolio](link_to_portfolio)
-
+-->

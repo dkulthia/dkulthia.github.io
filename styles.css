@@ -37,3 +37,21 @@ main {
 section {
   margin-bottom: 40px;
 }
+
+#about {
+  text-align: center;
+}
+
+.profile-circle {
+  width: 150px; /* Adjust size as needed */
+  height: 150px; /* Adjust size as needed */
+  border-radius: 50%; /* Creates a circular shape */
+  overflow: hidden; /* Hides overflow outside the circle */
+  margin: 0 auto 20px; /* Centers the circle and adds margin */
+}
+
+.profile-circle img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%; /* Ensures the image takes the circular shape */
+}

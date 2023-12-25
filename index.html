@@ -6,41 +6,53 @@
   <title>Darsh Kulthia - Frontend Web Developer</title>
   <link rel="stylesheet" href="styles.css">
   <script src="https://kit.fontawesome.com/a2a4cfc191.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
 </head>
 <body>
-  <header>
-    <nav>
-      <ul class="nav-links">
-        <li><a href="#about">About Me</a></li>
-        <li><a href="#skills">Skills and Technologies</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
+   <nav class="bg-gray-900 text-white p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="#" class="text-2xl font-semibold">Darsh Kulthia</a>
+            <ul class="flex space-x-4">
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
     </nav>
-  </header>
 
-  <main>
-    <section id="about">
-      <div class="profile-circle">
+    <header class="bg-blue-500 h-screen flex items-center justify-center text-white">
+        <div class="text-center">
+            <h1 class="text-4xl font-semibold">Hello, I'm Darsh Kulthia</h1>
+            <p class="text-lg">A Frontend Web Developer</p>
+            <a href="#contact" class="bg-yellow-500 hover:bg-yellow-400 text-gray-900 hover:text-white py-2 px-4 mt-4 inline-block rounded-lg transition duration-300 ease-in-out">Contact Me</a>
+        </div>
+    </header>
+
+    <section id="about" class="py-16">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-semibold text-gray-900">About Me</h2>
+          <div class="profile-circle">
         <img src="my.png" alt="Profile Picture">
       </div>
       <p>
         Hey there! I'm Darsh Kulthia, a passionate frontend web developer with a knack for turning ideas into interactive and visually stunning web experiences. I thrive on the challenge of creating seamless, user-friendly interfaces that bridge design and functionality.
       </p>
+        </div>
     </section>
 
-    <section id="skills">
-      html css js
+    <section id="projects" class="bg-gray-100 py-16">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-semibold text-gray-900">My Projects</h2>
+            
+        </div>
     </section>
 
-    <section id="projects">
-      <!-- Projects content goes here -->
+    <section id="contact" class="bg-blue-500 text-white py-16">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-semibold">Contact Me</h2>
+            
+        </div>
     </section>
-
-    <section id="contact">
-      <!-- Contact content goes here -->
-    </section>
-  </main>
 
 </body>
 </html>

@@ -3,15 +3,15 @@
 }
 
 .profile-circle {
-  width: 150px; /* Adjust size as needed */
-  height: 150px; /* Adjust size as needed */
-  border-radius: 50%; /* Creates a circular shape */
-  overflow: hidden; /* Hides overflow outside the circle */
-  margin: 0 auto 20px; /* Centers the circle and adds margin */
+  width: 150px; 
+  height: 150px; 
+  border-radius: 50%;
+  overflow: hidden; 
+  margin: 0 auto 20px; 
 }
 
 .profile-circle img {
   width: 100%;
   height: auto;
-  border-radius: 50%; /* Ensures the image takes the circular shape */
+  border-radius: 50%;
 }

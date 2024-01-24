@@ -23,3 +23,7 @@
   height: auto;
   border-radius: 50%;
 }
+
+body {
+  cursor: url('cursor-pointer.png'), auto;
+}

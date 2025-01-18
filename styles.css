@@ -10,18 +10,18 @@
   text-align: center;
 }
 
-.profile-circle {
-  width: 150px; 
+.profile-box {
+  width: 200px;
   height: 150px; 
-  border-radius: 50%;
-  overflow: hidden; 
-  margin: 0 auto 20px; 
+  border-radius: 20px;
+  overflow: hidden;
+  margin: 0 auto 20px;
 }
 
-.profile-circle img {
+.profile-box img {
   width: 100%;
   height: auto;
-  border-radius: 50%;
+  border-radius: 0;
 }
 
 body {

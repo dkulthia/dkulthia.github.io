@@ -69,3 +69,10 @@ var typed = new Typed(".intro-2", {
     backSpeed: 50,
     loop: true
 });
+
+var typed = new Typed(".about-me", {
+    strings: ["Hey there! I'm Darsh Kulthia, a passionate full stack developer with a knack for turning ideas into interactive and visually stunning experiences. I thrive on the challenge of creating seamless, user-friendly interfaces that bridge design and functionality."],
+    typeSpeed: 50,
+    backSpeed: 50,
+    loop: false
+});

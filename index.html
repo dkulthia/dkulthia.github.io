@@ -1,76 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Darsh Kulthia - Frontend Web Developer</title>
-  <link rel="stylesheet" href="styles.css">
-  <script src="https://kit.fontawesome.com/a2a4cfc191.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-  <script src="click-spark.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Darsh Kulthia</title>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="https://kit.fontawesome.com/a2a4cfc191.js" crossorigin="anonymous"></script>
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-  <click-spark></click-spark>
-   <nav class="bg-gray-900 text-white p-4">
+    <canvas id="canvas"></canvas>
+    <nav class="p-4">
         <div class="container mx-auto flex justify-between items-center">
-            <a href="#" class="text-2xl font-semibold">Darsh Kulthia</a>
+            <a href="#" class="text-2xl font-semibold"><strong>Darsh Kulthia</strong></a>
             <ul class="flex space-x-4">
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#about"><strong>About</strong></a></li>
+                <li><a href="#projects"><strong>Projects</strong></a></li>
+                <li><a href="#achievements"><strong>Achievements</strong></a></li>
+                <li><a href="#contact"><strong>Contact</strong></a></li>
             </ul>
         </div>
     </nav>
-
-    <header class="bg-blue-500 h-screen flex items-center justify-center text-white">
-        <div class="text-center">
-            <h1 class="text-4xl font-semibold">Hello, I'm Darsh Kulthia</h1>
-            <p class="text-lg">Passionate Web Developer | Python Enthusiast | Creator of Applications & Browser Extensions🚀</p>
-            <a href="#contact" class="bg-yellow-500 hover:bg-yellow-400 text-gray-900 hover:text-white py-2 px-4 mt-4 inline-block rounded-lg transition duration-300 ease-in-out">Contact Me</a>
-        </div>
-    </header>
-
-    <section id="about" class="py-16 bg-gray-900 text-white">
-        <div class="container mx-auto">
-            <h2 class="text-3xl font-semibold text-white">About Me</h2>
+    <header class="h-screen flex items-center justify-center">
+            <div class="text-center">
+                <h1 class="text-4xl font-semibold"><strong><span class="intro"></span></strong></h1>
                 <br>
-            <div class="profile-box">
-              <img src="pic-hd.jpeg" alt="Profile Picture">
+                <p class="text-lg"><strong>A <span class="intro-2"></span></strong></p>
+                <br>
+                <br>
+                <a href="#contact" id="btn" class="text-gray-900 py-2 px-4 mt-4 inline-block rounded-lg transition duration-300 ease-in-out"><strong>Contact Me</strong></a>
             </div>
-
-            <p>
-                Hey there! I'm Darsh Kulthia, a passionate frontend web developer with a knack for turning ideas into interactive and visually stunning web experiences. I thrive on the challenge of creating seamless, user-friendly interfaces that bridge design and functionality.
-            </p>
-            
-            <h3 class="text-xl font-semibold mt-8">Skills and Technologies</h3>
+    </header>
+    <section id="about" class="h-screen py-16">
+            <div class="container mx-auto">
+                <h2 class="text-3xl font-semibold"><strong>About Me</strong></h2>
+                <br>
+                <br>
+                <div class="profile-box">
+                    <img src="https://raw.githubusercontent.com/dkulthia/dkulthia.github.io/refs/heads/main/pic-hd.jpeg" alt="Profile Picture">
+                </div>
+                <br>
+                <br>
+                <div class="info">
+                    <p>
+                        Hey there! I'm Darsh Kulthia, a passionate full stack developer with a knack for turning ideas into interactive and visually stunning experiences. I thrive on the challenge of creating seamless, user-friendly interfaces that bridge design and functionality.
+                    </p>
+                </div>
+            </div>
+    </section>
+    <br>
+    <br>
+    <br>
+    <br>
+    <section id="projects" class="h-screen py-16">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-semibold mb-8"><strong>My Projects</strong></h2>
             <br>
-                <i class="fa-brands fa-html5 fa-2xl"></i>
-                <i class="fa-brands fa-css3-alt fa-2xl"></i>
-                <i class="fa-brands fa-square-js fa-2xl"></i>
-                <i class="fa-brands fa-sass fa-2xl"></i>
-                <i class="fa-brands fa-java fa-2xl"></i>
-                <i class="fa-brands fa-python fa-2xl"></i>
-                <i class="fa-brands fa-flask fa-2xl"></i>
-        </div>
-    </section>
-    
-    
-
-
-    <section id="projects" class="bg-blue-500 py-16">
-        <div class="container mx-auto">
-            <h2 class="text-3xl font-semibold text-gray-900">My Projects</h2>
+            <br>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <a href="https://github.com/dkulthia/ClipTube" target="_blank">
+                    <img src="https://github-readme-stats.vercel.app/api/pin/?username=dkulthia&repo=ClipTube&show_owner=false&theme=shadow_red&title_color=FF0000&text_color=FF0000&border_color=FF0000&icon_color=FF0000" alt="ClipTube" class="w-full rounded-lg shadow-lg transition-transform duration-300 hover:scale-105" />
+                </a>
+      
+                <a href="https://github.com/dkulthia/Verifier" target="_blank">
+                    <img src="https://github-readme-stats.vercel.app/api/pin/?username=dkulthia&repo=Verifier&show_owner=false&theme=shadow_red&title_color=FF0000&text_color=FF0000&border_color=FF0000&icon_color=FF0000" alt="Verifier" class="w-full rounded-lg shadow-lg transition-transform duration-300 hover:scale-105" />
+                </a>
             
+                <a href="https://github.com/dkulthia/Click-Spark-fnc" target="_blank">
+                    <img src="https://github-readme-stats.vercel.app/api/pin/?username=dkulthia&repo=Click-Spark-fnc&show_owner=false&theme=shadow_red&title_color=FF0000&text_color=FF0000&border_color=FF0000&icon_color=FF0000" alt="Click-Spark-fnc" class="w-full rounded-lg shadow-lg transition-transform duration-300 hover:scale-105" />
+                </a>
+      
+                <a href="https://github.com/dkulthia/ClipTube" target="_blank">
+                    <img src="https://github-readme-stats.vercel.app/api/pin/?username=dkulthia&repo=ClipTube&show_owner=false&theme=shadow_red&title_color=FF0000&text_color=FF0000&border_color=FF0000&icon_color=FF0000" alt="ClipTube" class="w-full rounded-lg shadow-lg transition-transform duration-300 hover:scale-105" />
+                </a>
+            </div>
+            <br>
+            <br>
+            <a href="https://github.com/dkulthia?tab=repositories" target="_blank" id="btn" class="text-gray-900 py-2 px-4 mt-4 inline-block rounded-lg transition duration-300 ease-in-out"><strong>More Projects</strong></a>
         </div>
     </section>
-
-    <section id="contact" class="bg-gray-900 text-white py-16">
-        <div class="container mx-auto">
-            <h2 class="text-3xl font-semibold">Contact Me</h2>
-            
-        </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <section id="achievements" class="h-screen py-16">
+            <div class="container mx-auto">
+                <h2 class="text-3xl font-semibold"><strong>My Achievements</strong></h2>
+                <br>
+                <br>
+                <br>
+                <br>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
+                    <a href="https://drive.google.com/file/d/113yY8frT8U4ZzZ54x2bFqNzE3wB3saDG/view?usp=sharing" target="_blank">
+                        <img src="https://raw.githubusercontent.com/dkulthia/dkulthia.github.io/refs/heads/main/Learn%20Python%20and%20Ethical%20Hacking%20From%20Scratch%20(Udemy).jpg" alt="Cert1" id="certificate" class="w-full rounded-lg shadow-lg transition-transform duration-300 hover:scale-105"/>
+                    </a>
+        
+                    <a href="https://drive.google.com/file/d/1rcAG0SxjI0Dbc8uSuWpXpLXC-rSqD3V4/view?usp=sharing" target="_blank">
+                        <img src="https://raw.githubusercontent.com/dkulthia/dkulthia.github.io/refs/heads/main/Masterclass%20(Freedom%20with%20AI).jpg" alt="Cert1" id="certificate" class="w-full rounded-lg shadow-lg transition-transform duration-300 hover:scale-105"/>
+                    </a>
+                </div>
+                <br>
+                <br>
+                <a href="about:blank" target="_blank" id="btn" class="text-gray-900 py-2 px-4 mt-4 inline-block rounded-lg transition duration-300 ease-in-out"><strong>More Certificates</strong></a>
+            </div>
     </section>
-    <script src = "script.js"></script>
+    <br>
+    <br>
+    <br>
+    <br>
+    <section id="contact" class="h-screen py-16">
+            <div class="container mx-auto">
+                <h2 class="text-3xl font-semibold"><strong>Contact Me</strong></h2>
+                <br>
+                <br>
+                <div class="max-w-2xl mx-auto p-8 rounded-lg shadow-md">
+                    <form action="https://formspree.io/f/your-form-id" method="POST">
+                    <div class="mb-4">
+                    <input type="text" id="name" name="name" placeholder="Name" class="w-full px-4 py-2 rounded-lg">
+                  </div>
+                  <div class="mb-4">
+                    <input type="email" id="email" name="email" placeholder="E-mail" class="w-full px-4 py-2 rounded-lg">
+                  </div>
+                  <div class="mb-6">
+                    <textarea id="message" name="message" rows="5" placeholder="Message" class="w-full px-4 py-2 rounded-lg"></textarea>
+                  </div>
+                  <div class="text-center">
+                    <button type="submit" id="btn" class="text-gray-900 py-2 px-4 mt-4 inline-block rounded-lg transition duration-300 ease-in-out"><strong>Send Message</strong></button>
+                  </div>
+                </form>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <div class="mt-8 text-center">
+                    <h3 class="text-lg font-medium mb-4">Connect with me</h3>
+                    <div class="flex justify-center space-x-4 text-white text-2xl">
+                      <a href="https://github.com/dkulthia" target="_blank" class="hover:text-yellow-400 transition">
+                        <i class="fab fa-github"></i>
+                      </a>
+                      <a href="https://linkedin.com/in/dkulthia" target="_blank" class="hover:text-yellow-400 transition">
+                        <i class="fab fa-linkedin"></i>
+                      </a>
+                      <a href="mailto:darsh.kulthia@example.com" class="hover:text-yellow-400 transition">
+                        <i class="fas fa-envelope"></i>
+                      </a>
+                      <a href="https://instagram.com/yourusername" target="_blank" class="hover:text-yellow-400 transition">
+                        <i class="fab fa-instagram"></i>
+                      </a>
+                    </div>
+                  </div>
+            </div>
+    </section>
+    <script src="script.js"></script>
 </body>
 </html>

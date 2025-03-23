@@ -1,29 +1,69 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+    
+body {
+    background: black;
+    color: red;
+    font-family: Arial, sans-serif;
+}
+    
+canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+}
+    
+.content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    padding: 20px;
+}
+    
 #about {
-  text-align: center;
+    text-align: center;
+}
+    
+#projects {
+    text-align: center;
 }
 
-#projects {
-  text-align: center;
+#achievements{
+    text-align: center;
 }
 
 #contact {
-  text-align: center;
+    text-align: center;
+}
+
+#btn{
+    background:#FF0000;
+}
+    
+#btn:hover {
+    background: #8B0000;
 }
 
 .profile-box {
-  width: 200px;
-  height: 150px; 
-  border-radius: 20px;
-  overflow: hidden;
-  margin: 0 auto 20px;
+    width: 200px;
+    height: 150px; 
+    border-radius: 20px;
+    overflow: hidden;
+    margin: 0 auto 20px;
 }
-
+    
 .profile-box img {
-  width: 100%;
-  height: auto;
-  border-radius: 0;
+    width: 100%;
+    height: auto;
+    border-radius: 0;
 }
 
-body {
-  cursor: url('cursor-pointer.png'), auto;
+#certificate{
+    height: 400px;
 }

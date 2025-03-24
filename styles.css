@@ -43,11 +43,13 @@ canvas {
 }
 
 #btn{
-    background:#FF0000;
+    color: black;
+    background:#8B0000
 }
     
 #btn:hover {
-    background: #8B0000;
+    color: #8B0000;
+    background:black;
 }
 
 .profile-box {
@@ -66,4 +68,21 @@ canvas {
 
 #certificate{
     height: 400px;
+}
+
+#social-box{
+    border-radius: 20px;
+    border-color: #FF0000;
+}
+
+#icons{
+    color: black;
+    background:#8B0000;
+    border-color: black;
+}
+    
+#icons:hover {
+    color: #8B0000;
+    background:black;
+    border-color: red;
 }

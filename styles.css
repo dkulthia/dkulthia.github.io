@@ -42,15 +42,19 @@ canvas {
     text-align: center;
 }
 
-#btn{
+#btn {
     color: black;
-    background:#8B0000
+    background: #8B0000;
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
 }
-    
+
 #btn:hover {
     color: #8B0000;
-    background:black;
+    background: transparent;
+    border-color: #8B0000;
 }
+
 
 .profile-box {
     width: 200px;
@@ -70,6 +74,26 @@ canvas {
     height: 400px;
 }
 
+form input,
+form textarea {
+    background-color: transparent;
+    border: 2px solid red;
+    color: red; /* <-- makes the typed text red */
+}
+
+form input::placeholder,
+form textarea::placeholder {
+    color: red;
+    opacity: 1;
+}
+
+form input:focus,
+form textarea:focus {
+    outline: none;
+    border-color: #ff4d4d;
+    box-shadow: 0 0 5px red;
+}
+
 #social-box{
     border-radius: 20px;
     border-color: #FF0000;
@@ -77,12 +101,13 @@ canvas {
 
 #icons{
     color: black;
-    background:#8B0000;
-    border-color: black;
+    background: #8B0000;
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
 }
     
 #icons:hover {
     color: #8B0000;
-    background:black;
-    border-color: red;
+    background: transparent;
+    border-color: #8B0000;
 }

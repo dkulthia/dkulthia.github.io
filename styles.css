@@ -8,8 +8,9 @@ body {
     background: black;
     color: red;
     font-family: Arial, sans-serif;
+    cursor: url('cursor.png'), auto; 
 }
-    
+
 canvas {
     position: fixed;
     top: 0;
@@ -42,6 +43,10 @@ canvas {
     text-align: center;
 }
 
+#nav-links:hover {
+    cursor: url('cursor.png'), auto;
+}
+
 #btn {
     color: black;
     background: #8B0000;
@@ -53,6 +58,7 @@ canvas {
     color: #8B0000;
     background: transparent;
     border-color: #8B0000;
+    cursor: url('cursor.png'), auto;
 }
 
 
@@ -70,8 +76,16 @@ canvas {
     border-radius: 0;
 }
 
+#project-cards:hover {
+    cursor: url('cursor.png'), auto;
+}
+
 #certificate{
     height: 400px;
+}
+
+#certificate:hover{
+    cursor: url('cursor.png'), auto;
 }
 
 form input,
@@ -94,6 +108,31 @@ form textarea:focus {
     box-shadow: 0 0 5px red;
 }
 
+form input:hover,
+form textarea:hover {
+    cursor: url('cursor.png'), auto;
+}
+
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px #000 inset !important; /* Background color */
+  -webkit-text-fill-color: red !important; /* Text color */
+  caret-color: red !important;
+  border: 2px solid red;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+input:-moz-autofill,
+textarea:-moz-autofill,
+select:-moz-autofill {
+  box-shadow: 0 0 0px 1000px #000 inset !important;
+  color: red !important;
+  caret-color: red !important;
+  border: 2px solid red;
+}
+
+
 #social-box{
     border-radius: 20px;
     border-color: #FF0000;
@@ -110,4 +149,5 @@ form textarea:focus {
     color: #8B0000;
     background: transparent;
     border-color: #8B0000;
+    cursor: url('cursor.png'), auto;
 }

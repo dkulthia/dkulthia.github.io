@@ -15,7 +15,7 @@
     <canvas id="canvas"></canvas>
     <nav class="p-4">
         <div class="container mx-auto flex justify-between items-center">
-            <a id="nav-links" href="#" class="text-2xl font-semibold"><strong>Darsh Kulthia</strong></a>
+            <a id="nav-links" href="#" class="text-3xl font-semibold"><strong>Darsh Kulthia</strong></a>
             <ul class="flex space-x-4">
                 <li><a id="nav-links" href="#about"><strong>About</strong></a></li>
                 <li><a id="nav-links" href="#projects"><strong>Projects</strong></a></li>
@@ -26,55 +26,69 @@
     </nav>
     <header class="h-screen flex items-center justify-center">
             <div class="text-center">
-                <h1 class="text-4xl font-semibold"><strong><span class="intro"></span></strong></h1>
+                <h1 class="text-4xl font-semibold"><strong><span id="text-red" class="intro"></span></strong></h1>
                 <br>
-                <p class="text-lg"><strong>A <span class="intro-2"></span></strong></p>
+                <p class="text-lg"><strong>A <span id="text-red" class="intro-2"></span></strong></p>
                 <br>
                 <br>
                 <a href="#contact" id="btn" class="text-gray-900 py-2 px-4 mt-4 inline-block rounded-lg transition duration-300 ease-in-out"><strong>Contact Me</strong></a>
             </div>
     </header>
+    
+    <br>
+    <br>
     <section id="about" class="h-screen py-16">
-            <div class="container mx-auto">
-                <h2 class="text-3xl font-semibold"><strong>About Me</strong></h2>
-                <br>
-                <br>
-                <div class="profile-box">
-                    <img src="https://raw.githubusercontent.com/dkulthia/dkulthia.github.io/refs/heads/main/pic-hd.jpeg" alt="Profile Picture">
-                </div>
-                <br>
-                <br>
-                <div class="info">
-                    <p>
-                        <span class="about-me"></span>
-                    </p>
+        <div class="container mx-auto flex flex-col items-center justify-center">
+            <h2 id="text-red" class="text-3xl font-semibold">About Me</h2>
+            <div class="bg-white/10 backdrop-blur-md rounded-2xl shadow-xl p-6 max-w-4xl w-full flex flex-col md:flex-row items-center transition-transform hover:scale-105 duration-300">
+                <!-- Profile Picture -->
+                <img src="https://raw.githubusercontent.com/dkulthia/dkulthia.github.io/refs/heads/main/pic-hd.jpeg" alt="Profile Picture" class="w-40 h-40 rounded-full object-cover border-4 border-red-500 shadow-md hover:scale-110 transition duration-300 mb-6 md:mb-0 md:mr-10"/>
+                <!-- About Info -->
+                <div class="text-center md:text-left">
+                    <h3 id="text-red" class="text-2xl font-semibold mb-2">Darsh Kulthia</h3>
+                    <p class="text-lg mb-4"><span id="text-grey" class="about-me"></span></p>
+                    <!-- Optional: Social Links -->
+                    <div class="flex gap-4 justify-center md:justify-start">
+                        <a href="https://github.com/dkulthia" target="_blank" id="icons" class="py-2 px-4 mt-4 inline-block rounded-lg transition duration-300 ease-in-out">
+                        <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://linkedin.com/in/dkulthia" target="_blank" id="icons" class="py-2 px-4 mt-4 inline-block rounded-lg transition duration-300 ease-in-out">
+                        <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="mailto:darsh.kulthia@example.com" id="icons" class="py-2 px-4 mt-4 inline-block rounded-lg transition duration-300 ease-in-out">
+                        <i class="fas fa-envelope"></i>
+                        </a>
+                        <a href="https://instagram.com/dkulthia" target="_blank" id="icons" class="py-2 px-4 mt-4 inline-block rounded-lg transition duration-300 ease-in-out">
+                        <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
                 </div>
             </div>
+        </div>
     </section>
-    <br>
-    <br>
+
     <br>
     <br>
     <section id="projects" class="h-screen py-16">
         <div class="container mx-auto">
-            <h2 class="text-3xl font-semibold mb-8"><strong>My Projects</strong></h2>
+            <h2 id="text-red" class="text-3xl font-semibold"><strong>My Projects</strong></h2>
             <br>
             <br>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <a href="https://github.com/dkulthia/ClipTube" target="_blank">
-                    <img id="project-cards" src="https://github-readme-stats.vercel.app/api/pin/?username=dkulthia&repo=ClipTube&show_owner=false&theme=shadow_red&title_color=FF0000&text_color=FF0000&border_color=FF0000&icon_color=FF0000" alt="ClipTube" class="w-full rounded-lg shadow-lg transition-transform duration-300 hover:scale-105" />
+                    <img id="project-cards" src="https://github-readme-stats.vercel.app/api/pin/?username=dkulthia&repo=ClipTube&show_owner=false&theme=shadow_red&title_color=FF0000&text_color=808080&border_color=FF0000&icon_color=FF0000" alt="ClipTube" class="w-full rounded-lg shadow-lg transition-transform duration-300 hover:scale-105" />
                 </a>
       
                 <a href="https://github.com/dkulthia/Verifier" target="_blank">
-                    <img id="project-cards" src="https://github-readme-stats.vercel.app/api/pin/?username=dkulthia&repo=Verifier&show_owner=false&theme=shadow_red&title_color=FF0000&text_color=FF0000&border_color=FF0000&icon_color=FF0000" alt="Verifier" class="w-full rounded-lg shadow-lg transition-transform duration-300 hover:scale-105" />
+                    <img id="project-cards" src="https://github-readme-stats.vercel.app/api/pin/?username=dkulthia&repo=ClipTube&show_owner=false&theme=shadow_red&title_color=FF0000&text_color=808080&border_color=FF0000&icon_color=FF0000" alt="ClipTube" class="w-full rounded-lg shadow-lg transition-transform duration-300 hover:scale-105" />
                 </a>
             
                 <a href="https://github.com/dkulthia/Click-Spark-fnc" target="_blank">
-                    <img id="project-cards" src="https://github-readme-stats.vercel.app/api/pin/?username=dkulthia&repo=Click-Spark-fnc&show_owner=false&theme=shadow_red&title_color=FF0000&text_color=FF0000&border_color=FF0000&icon_color=FF0000" alt="Click-Spark-fnc" class="w-full rounded-lg shadow-lg transition-transform duration-300 hover:scale-105" />
+                    <img id="project-cards" src="https://github-readme-stats.vercel.app/api/pin/?username=dkulthia&repo=ClipTube&show_owner=false&theme=shadow_red&title_color=FF0000&text_color=808080&border_color=FF0000&icon_color=FF0000" alt="ClipTube" class="w-full rounded-lg shadow-lg transition-transform duration-300 hover:scale-105" />
                 </a>
       
                 <a href="https://github.com/dkulthia/ClipTube" target="_blank">
-                    <img id="project-cards" src="https://github-readme-stats.vercel.app/api/pin/?username=dkulthia&repo=ClipTube&show_owner=false&theme=shadow_red&title_color=FF0000&text_color=FF0000&border_color=FF0000&icon_color=FF0000" alt="ClipTube" class="w-full rounded-lg shadow-lg transition-transform duration-300 hover:scale-105" />
+                    <img id="project-cards" src="https://github-readme-stats.vercel.app/api/pin/?username=dkulthia&repo=ClipTube&show_owner=false&theme=shadow_red&title_color=FF0000&text_color=808080&border_color=FF0000&icon_color=FF0000" alt="ClipTube" class="w-full rounded-lg shadow-lg transition-transform duration-300 hover:scale-105" />
                 </a>
             </div>
             <br>
@@ -88,7 +102,7 @@
     <br>
     <section id="achievements" class="h-screen py-16">
             <div class="container mx-auto">
-                <h2 class="text-3xl font-semibold"><strong>My Achievements</strong></h2>
+                <h2 id="text-red" class="text-3xl font-semibold"><strong>My Achievements</strong></h2>
                 <br>
                 <br>
                 <br>
@@ -113,7 +127,7 @@
     <br>
     <section id="contact" class="h-screen py-16">
             <div class="container mx-auto">
-                <h2 class="text-3xl font-semibold"><strong>Contact Me</strong></h2>
+                <h2 id="text-red" class="text-3xl font-semibold"><strong>Contact Me</strong></h2>
                 <br>
                 <br>
                 <div class="max-w-2xl mx-auto p-8 rounded-lg shadow-md">
@@ -135,7 +149,7 @@
                 <br>
                 <br>
                 <div class="mt-8 text-center">
-                    <h3 class="text-lg font-medium mb-4"><strong>Connect with me</strong></h3>
+                    <h3 id="text-red" class="text-lg font-medium mb-4"><strong>Connect with me</strong></h3>
                     <div id="social-box" class="flex justify-center space-x-4 text-2xl">
                       <a href="https://github.com/dkulthia" target="_blank" id="icons" class="py-2 px-4 mt-4 inline-block rounded-lg transition duration-300 ease-in-out">
                         <i class="fab fa-github"></i>

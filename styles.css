@@ -3,12 +3,12 @@
     padding: 0;
     box-sizing: border-box;
 }
-    
+
 body {
     background: black;
     color: grey;
     font-family: Arial, sans-serif;
-    cursor: url('cursor.png'), auto; 
+    cursor: url('cursor.png'), auto;
 }
 
 canvas {
@@ -19,23 +19,23 @@ canvas {
     height: 100vh;
     z-index: -1;
 }
-    
+
 .content {
     position: relative;
     z-index: 1;
     text-align: center;
     padding: 20px;
 }
-    
+
 #about {
     text-align: center;
 }
-    
+
 #projects {
     text-align: center;
 }
 
-#achievements{
+#achievements {
     text-align: center;
 }
 
@@ -43,7 +43,7 @@ canvas {
     text-align: center;
 }
 
-#nav-links{
+#nav-links {
     color: red;
 }
 
@@ -51,11 +51,11 @@ canvas {
     cursor: url('cursor.png'), auto;
 }
 
-#text-red{
+#text-red {
     color: red;
 }
 
-#text-grey{
+#text-grey {
     color: grey;
 }
 
@@ -76,12 +76,12 @@ canvas {
 
 .profile-box {
     width: 200px;
-    height: 150px; 
+    height: 150px;
     border-radius: 20px;
     overflow: hidden;
     margin: 0 auto 20px;
 }
-    
+
 .profile-box img {
     width: 100%;
     height: auto;
@@ -92,12 +92,13 @@ canvas {
     cursor: url('cursor.png'), auto;
 }
 
-#certificate{
+#certificate {
     height: 400px;
 }
 
-#certificate:hover{
+#certificate:hover {
     cursor: url('cursor.png'), auto;
+    border-color: red;
 }
 
 form input,
@@ -128,35 +129,35 @@ form textarea:hover {
 input:-webkit-autofill,
 textarea:-webkit-autofill,
 select:-webkit-autofill {
-  -webkit-box-shadow: 0 0 0px 1000px #000 inset !important; /* Background color */
-  -webkit-text-fill-color: grey !important; /* Text color */
-  caret-color: red !important;
-  border: 2px solid red;
-  transition: background-color 5000s ease-in-out 0s;
+    -webkit-box-shadow: 0 0 0px 1000px #000 inset !important;
+    -webkit-text-fill-color: grey !important;
+    caret-color: red !important;
+    border: 2px solid red;
+    transition: background-color 5000s ease-in-out 0s;
 }
 
 input:-moz-autofill,
 textarea:-moz-autofill,
 select:-moz-autofill {
-  box-shadow: 0 0 0px 1000px #000 inset !important;
-  color: grey !important;
-  caret-color: red !important;
-  border: 2px solid red;
+    box-shadow: 0 0 0px 1000px #000 inset !important;
+    color: grey !important;
+    caret-color: red !important;
+    border: 2px solid red;
 }
 
 
-#social-box{
+#social-box {
     border-radius: 20px;
     border-color: #FF0000;
 }
 
-#icons{
+#icons {
     color: black;
     background: #8B0000;
     border: 2px solid transparent;
     transition: all 0.3s ease;
 }
-    
+
 #icons:hover {
     color: #8B0000;
     background: transparent;

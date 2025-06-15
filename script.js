@@ -64,7 +64,7 @@ var typed = new Typed(".intro", {
 });
 
 var typed = new Typed(".intro-2", {
-    strings: ["Full Stack Developer...", "Creator...", "Technophile...", "Passionate Developer...", "Tech Enthusiast...", "Web Developer...", "Creative Coder...", "UI/UX Designer...", "Problem Solver..."],
+    strings: ["Full Stack Developer...", "Creator...", "Technophile...", "Passionate Developer...", "Tech Enthusiast...", "Web Developer...", "Creative Coder...", "UI/UX Designer...", "Problem Solver...", "Cybersecurity Hobbyist...", "Security Enthusiast..."],
     typeSpeed: 50,
     backSpeed: 50,
     loop: true

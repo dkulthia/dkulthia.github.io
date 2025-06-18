@@ -57,7 +57,7 @@ window.addEventListener('resize', function () {
 });
 
 function copyDiscord() {
-        const discordTag = 'yourusername#1234'; // or your Discord User ID
+        const discordTag = '864134156908888074';
         navigator.clipboard.writeText(discordTag).then(() => {
             alert('Discord tag copied to clipboard!');
         }).catch(err => {

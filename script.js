@@ -56,6 +56,15 @@ window.addEventListener('resize', function () {
     drops = new Array(columns).fill(0);
 });
 
+function copyDiscord() {
+        const discordTag = 'yourusername#1234'; // or your Discord User ID
+        navigator.clipboard.writeText(discordTag).then(() => {
+            alert('Discord tag copied to clipboard!');
+        }).catch(err => {
+            console.error('Failed to copy: ', err);
+        });
+    }
+
 var typed = new Typed(".intro", {
     strings: ["Hello, I'm Darsh Kulthia..."],
     typeSpeed: 50,
